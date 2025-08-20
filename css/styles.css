@@ -32,16 +32,17 @@ body {
 }
 .header-container {
   display: flex;
-  align-items: center;
+  align-items: self-start;
 }
 .nav {
   display: flex;
+  width: 900px;
 }
 .header-nav-list {
   display: flex;
   padding-top: 40px;
-  padding-bottom: 20px;
-  gap: 50px;
+  padding-bottom: 40px;
+  gap: 10px;
   list-style: none;
 }
 .header-nav-link {
@@ -72,6 +73,69 @@ body {
   text-shadow: 2px 6px #B05C52;
 }
 
+/*-----------------articals main-------------------*/
+.articles-container {
+  display: flex;
+  margin: 20px 0px;
+  gap: 10px;
+}
+.section-title{
+ padding: 40px 0px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.1111;
+  text-align: left;
+  letter-spacing: 0.02em;
+  color: #2E1F27;
+}
+.article-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 450px;
+  height: auto;
+  padding: 15px;
+  border: 1px solid;
+  border-color: #B05C52;
+  border-radius: 10px;
+}
+.article-title{
+  margin-bottom: 15px;
+  height: 85px;
+  font-weight: 400;
+  font-size: 25px;
+  text-align: justify;
+}
+.article-link{
+  text-decoration: none;
+  color: #2E1F27;
+}
+.article-link:hover,
+.article-link:focus {
+  color: #FFD1C1;
+}
+.article-text {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  text-align: justify;
+}
+.box-link {
+  text-decoration: none;
+  color: #FFD1C1;
+}
+.article-text .text {
+  margin-top: auto; 
+  text-align: right;
+}
+.comment-link {
+  font-weight: 400;
+  text-decoration: none;
+  color: #2E1F27;
+}
+
+
+
 /*-----------------footer-------------------------*/
 .footer {
   display: block;
@@ -84,31 +148,4 @@ body {
   font-weight: 300;
   font-size: 18px;
   color:   color: #2E1F27;
-}
-
-
-/*-----------------articals main-------------------*/
-.articles-container {
-  display: flex;
-  flex-direction: row;
-  margin-top: 40px;
-  gap: 15px;
-}
-.section-title{
-  margin-top: 50px;
-  padding-top: 50px;
-  font-weight: 300;
-  font-size: 40px;
-  line-height: 1.1111;
-  text-align: left;
-  letter-spacing: 0.02em;
-  color: #2E1F27;
-}
-.article-box {
-  display: flex;
-  flex-direction: column;
-  padding: 20px 10px;
-}
-.article-title{
-  margin-top: 20px;
 }
