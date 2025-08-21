@@ -35,88 +35,96 @@
 
   <main>
     <!-- registration form -->
-    <section>
-      <h1>Форма реєстраціі</h1>
-      <div class="container">
-        <form action="https://tests.fomenko.top/echo/index.php" method="get">
-          <!-- personal information -->
-          <fieldset>
-            <legend>Особиста інформація</legend>
-            <div>
-              <label for="firsName">Фамілія</label>
-              <input id="firsName" name="login" type="text" placeholder="введіть фамілію">
-            </div>
-            <div>
-              <label for="lastName">Ім'я</label>
-              <input id="lastName" name="login" type="text" placeholder="введіть ім'я">
-            </div>
-            <div>
-              <label for="file">Фото</label>
-              <input id="file" name="file" type="file">
-            </div>
-            <div>
-              <label for="email">Email</label>
-              <input id="email" name="email" type="email" placeholder="введіть email">
-            </div>
-            <div>
-              <label for="password">Password</label>
-              <input id="password" name="password" type="password" placeholder="введіть password" minlength="5"
-                maxlength="20">
-            </div>
-            <div>
-              <label for="site">Адреса сайту</label>
-              <input id="site" name="site" type="url" placeholder="сайт">
-            </div>
-          </fieldset>
-          <!--gender -->
-          <fieldset>
-            <legend>Стать</legend>
-            <p>Віберіть стать</p>
-            <div>
-              <input id="male" name="gander-male" type="radio" value="gender-male">
-              <label for="male">Чоловіча</label>
-            </div>
-            <div>
-              <input id="female" name="gender-female" type="radio" value="gender-female">
-              <label for="female">Жіноча</label>
-            </div>
-          </fieldset>
-          <!-- day of birth -->
-          <fieldset>
-            <legend>Дата нарождення</legend>
-            <label for="date">Виберіть дату</label>
-            <input id="date" type="date">
-          </fieldset>
-          <!-- type of food -->
-          <fieldset>
-            <legend>Вибір кухні</legend>
-            <div>
-              <input id="food-uk" name="food" type="checkbox" value="uk">
-              <label for="food-uk">Українська</label>
-            </div>
-            <div>
-              <input id="food-it" name="food" type="checkbox" value="it">
-              <label for="food-it">Італійська</label>
-            </div>
-            <div>
-              <input id="food-ja" name="food" type="checkbox" value="ja">
-              <label for="food-ja">Японька</label>
-            </div>
-            <div>
-              <input id="food-fr" name="food" type="checkbox" value="fr">
-              <label for="food-fr">Французька</label>
-            </div>
-          </fieldset>
-          <fieldset>
-            <label for="text">Про себе</label>
-            <textarea id="text" name="texy" placeholder="Введіть інформацію про себе..." rows="10" cols="30"></textarea>
-          </fieldset>
-          <!-- buttons -->
-          <button type="submit">Зареєструватися</button>
-          <button type="reset">Очистити форму</button>
-        </form>
+    <section class="form-section">
+  <h1 class="form-title">Форма реєстрації</h1>
+  <div class="container form-container">
+    <form class="form" action="https://tests.fomenko.top/echo/index.php" method="get">
+      
+      <!-- Особиста інформація -->
+      <fieldset class="form-fieldset">
+        <legend class="form-legend">Особиста інформація</legend>
+        <div class="form-group">
+          <label class="form-label" for="firsName">Фамілія</label>
+          <input class="form-input" id="firsName" name="login" type="text" placeholder="введіть фамілію">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="lastName">Ім'я</label>
+          <input class="form-input" id="lastName" name="login" type="text" placeholder="введіть ім'я">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="file">Фото</label>
+          <input class="form-input" id="file" name="file" type="file">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="email">Email</label>
+          <input class="form-input" id="email" name="email" type="email" placeholder="введіть email">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="password">Password</label>
+          <input class="form-input" id="password" name="password" type="password" placeholder="введіть password" minlength="5" maxlength="20">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="site">Адреса сайту</label>
+          <input class="form-input" id="site" name="site" type="url" placeholder="сайт">
+        </div>
+      </fieldset>
+
+      <!-- Стать -->
+      <fieldset class="form-fieldset">
+        <legend class="form-legend">Стать</legend>
+        <p class="form-text">Виберіть стать</p>
+        <div class="form-group">
+          <input class="form-radio" id="male" name="gender" type="radio" value="male">
+          <label class="form-label" for="male">Чоловіча</label>
+        </div>
+        <div class="form-group">
+          <input class="form-radio" id="female" name="gender" type="radio" value="female">
+          <label class="form-label" for="female">Жіноча</label>
+        </div>
+      </fieldset>
+
+      <!-- Дата народження -->
+      <fieldset class="form-fieldset">
+        <legend class="form-legend">Дата народження</legend>
+        <label class="form-label" for="date">Виберіть дату</label>
+        <input class="form-input" id="date" type="date">
+      </fieldset>
+
+      <!-- Вибір кухні -->
+      <fieldset class="form-fieldset">
+        <legend class="form-legend">Вибір кухні</legend>
+        <div class="form-group">
+          <input class="form-checkbox" id="food-uk" name="food" type="checkbox" value="uk">
+          <label class="form-label" for="food-uk">Українська</label>
+        </div>
+        <div class="form-group">
+          <input class="form-checkbox" id="food-it" name="food" type="checkbox" value="it">
+          <label class="form-label" for="food-it">Італійська</label>
+        </div>
+        <div class="form-group">
+          <input class="form-checkbox" id="food-ja" name="food" type="checkbox" value="ja">
+          <label class="form-label" for="food-ja">Японська</label>
+        </div>
+        <div class="form-group">
+          <input class="form-checkbox" id="food-fr" name="food" type="checkbox" value="fr">
+          <label class="form-label" for="food-fr">Французька</label>
+        </div>
+      </fieldset>
+
+      <!-- Про себе -->
+      <fieldset class="form-fieldset">
+        <label class="form-label" for="text">Про себе</label>
+        <textarea class="form-textarea" id="text" name="text" placeholder="Введіть інформацію про себе..." rows="6"></textarea>
+      </fieldset>
+
+      <!-- Кнопки -->
+      <div class="form-buttons">
+        <button class="btn btn-submit" type="submit">Зареєструватися</button>
+        <button class="btn btn-reset" type="reset">Очистити форму</button>
       </div>
-    </section>
+    </form>
+  </div>
+</section>
   </main>
 
   <!--footer -->
